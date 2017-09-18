@@ -3,7 +3,7 @@ Galaforce for the BBC Micro by Kevin Edwards
 
 Galaforce is a fixed shooter video game for the BBC Micro and Acorn Electron, written by Kevin Edwards and published by Superior Software in 1986.
 
-Read more about the game on it's wiki here [Galaforce](https://en.wikipedia.org/wiki/Galaforce)
+Read more about the game on Wikipedia here [Galaforce](https://en.wikipedia.org/wiki/Galaforce)
 
 ## 30th Anniversary
 
