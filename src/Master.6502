@@ -1,0 +1,64 @@
+
+
+
+
+
+	\start main assembly
+	ORG &0 
+	INCLUDE "src\CONST.6502"
+	INCLUDE "src\ZPWORK.6502"
+	ORG &400 \originally assembled at &3000, absolute is 400
+	INCLUDE "src\ABSWORK.6502"
+ 
+	\Kevin Edwards original assembly routine prebuilt the fonts and *loaded before save
+	\no harm in using the source ASM
+	ORG &900
+	INCLUDE "src\SPFONT.6502"
+	INCLUDE "src\DIGITS.6502"  	
+	SKIP 16
+
+	\assemble main game modules in correct order
+	ORG &B00	
+	INCLUDE "src\SPRITES.6502"
+	INCLUDE "src\INIT.6502"
+	INCLUDE "src\ALIENS1.6502"
+	INCLUDE "src\ALIENS2.6502"
+	INCLUDE "src\ALIENS3.6502"
+	INCLUDE "src\ALIENS4.6502"
+	INCLUDE "src\ROUT1.6502" 
+	INCLUDE "src\ROUT2.6502" 
+	INCLUDE "src\ROUT3.6502" 
+	INCLUDE "src\ROUT4.6502" 
+
+	INCLUDE "src\STARS.6502" 
+	
+	INCLUDE "src\BOMBS1.6502"
+	INCLUDE "src\BOMBS2.6502"
+	INCLUDE "src\CHARP.6502" 
+	INCLUDE "src\FLAGS.6502" 
+	
+	INCLUDE "src\MUSIC1.6502"
+	INCLUDE "src\MUSIC2.6502"
+	INCLUDE "src\MUSIC3.6502"
+	INCLUDE "src\TITLE.6502"
+	INCLUDE "src\HIGH.6502"
+	
+	INCLUDE "src\WAVE.6502"
+	INCLUDE "src\PATT.6502"
+	INCLUDE "src\PATDAT.6502"
+	INCLUDE "src\VECTORS.6502"
+	
+	\Kevin Edwards original assembly routine prebuilt the sprites and *loaded before save
+	\no harm in using the source ASM directly instead of prebuilding as memory location is good
+	ORG &297A
+	INCLUDE "src\GRAPHIC.6502"
+
+	\add the pre assembled relocation binary
+	ORG &3000
+	INCBIN "DOWN.BIN"
+	
+	\output the files to disc, the original loader, the loading screen (sourced from STH disc) and the game
+	PUTBASIC "src\GALA.BAS" ,"$.GALA"				\BASIC Sound envelope setup and loader
+	PUTFILE "src\GALASCR.IMG", "$.GALASCR", &5800	\Loading screen
+  	SAVE "GALA3" , &900, &3200 , &4000 , &1900	\main game
+

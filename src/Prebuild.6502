@@ -1,0 +1,11 @@
+
+
+
+	\prebuild the  relocation routine. 
+	\assembled at 4000 to match crc of original release
+	INCLUDE "src\CONST.6502"
+	ORG &4000	
+	INCLUDE "src\DOWN.6502"
+	SAVE "DOWN.BIN", download, RelocEnd +100
+	\padded with 00 to match crc
+	

@@ -1,0 +1,47 @@
+
+
+
+ 
+ \\ $.ZPWORK
+ 
+	ORG 0
+	
+   .colour
+   .screen   SKIP 1
+   .savey    SKIP 1
+   .data
+   .screen2  SKIP 2
+  .temp
+  .temp1    SKIP 1
+  .length	SKIP 1
+  .width
+  .temp2    SKIP 2
+   
+  .addres
+  .temp3    SKIP 2
+  .addres1
+  .temp4    SKIP 2
+  .wavbase  SKIP 2
+  .stardat SKIP 3*31
+  .rand1 SKIP 3
+  .whichstar SKIP 1
+  .counter SKIP 1
+  .expldelay SKIP 1
+   
+  .initst SKIP maxpatt
+  .initx SKIP maxpatt
+  .inity SKIP maxpatt
+  .initdel SKIP maxpatt
+  .initcount SKIP maxpatt
+  .initnum SKIP maxpatt
+  .initrelx SKIP maxpatt
+  .initrely SKIP maxpatt
+  .initgra SKIP maxpatt
+  .initpnum SKIP maxpatt
+   
+  .aliens SKIP 1
+  .aliensm1 SKIP 1
+   
+  GUARD &9A
+
+  
