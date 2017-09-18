@@ -15,15 +15,15 @@ It's been a long time since I did any assembler and wanted to get to know BeebAS
 
 ## Build Process
 
-Kevin's Original assembler used the BBC Micro's built in assembler. There is a BASIC program called Master that assembles each file, into memory, multi-pass to work out references accros files and then writes to disk. This is the file I used to compare my beebasm output. 
+Kevin's original build process used the BBC Micro's built in assembler. There is a BASIC program called `$.MASTER` that assembles each file, into memory, multi-pass to work out references across include files and then writes the memory to disk. This is the file I used to compare my beebasm output. 
 
 `$.GAME CRC32 a2b41e0e`
 
 To build open a command prompt, navigate to the directory and run `make.bat`
 
-Just like the Kevin's original process some code is prebuilt and then included in the master build.
+Just like the Kevin's original process, some code is prebuilt into binary files and then included in the master build.
 
-The make file checks the output CRC matches the original version and if correct will then output a BBC DFS disk image.
+The make batch file checks the output CRC matches the original version and if correct will then output a BBC DFS disk image.
 
 If successful you should have a `Galaforce.ssd` file in your directory that you can load into an emulator.
 
