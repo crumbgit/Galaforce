@@ -1,0 +1,72 @@
+
+  \\ $.ABSWORK
+  .alst SKIP maxaliens
+  .algra SKIP maxaliens
+  .alpatlow SKIP maxaliens
+  .alpathigh SKIP maxaliens
+  .alpatoff SKIP maxaliens
+  .alcount SKIP maxaliens
+  .almult SKIP maxaliens
+  .aldirect SKIP maxaliens
+  .alx SKIP maxaliens
+  .aly SKIP maxaliens
+  .al_loop_count SKIP maxaliens
+  .al_loop_start SKIP maxaliens
+  .alpatreflect SKIP maxaliens
+   
+  .mybullx SKIP mymaxbull
+  .mybully SKIP mymaxbull
+  .mybullst SKIP mymaxbull
+   
+  .albullx SKIP almaxbull
+  .albully SKIP almaxbull
+  .albullst SKIP almaxbull
+  .albullspeed SKIP almaxbull
+   
+  .lives SKIP 1
+  .myx SKIP 1
+  .myy SKIP 1
+  .myst SKIP 1
+  .score_base
+  .myscore SKIP 7
+  .hiscore SKIP 7
+   
+  .wavoff SKIP 1
+  .almove SKIP 1
+  .curwave SKIP 1
+  .procst SKIP 1
+  .mybullact SKIP 1
+  .albullact SKIP 1
+  .initact SKIP 1
+  .bombdel SKIP 1
+  .dem_section SKIP 1
+   
+  .sound_flag SKIP 1
+  .key_joy_flag SKIP 1
+  .demo_flag SKIP 1
+  .demo_count SKIP 1
+  .demo_direction SKIP 1
+  .counter_sound SKIP 1
+  .extra_life_flag SKIP 1
+  .sixteen_flag SKIP 1
+  .pause_flag SKIP 1
+   
+  .hstxt
+   EQUS"1234567890"
+   EQUS"1234567890"
+   EQUS"1234567890"
+   EQUS"1234567890"
+   EQUS"1234567890"
+   EQUS"1234567890"
+   EQUS"1234567890"
+   EQUS"1234567890"
+  .hsnum
+   EQUS"1234567"
+   EQUS"1234567"
+   EQUS"1234567"
+   EQUS"1234567"
+   EQUS"1234567"
+   EQUS"1234567"
+   EQUS"1234567"
+   EQUS"1234567"
+   
