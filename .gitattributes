@@ -2,7 +2,8 @@
 * text=auto
 
 # Custom for Visual Studio
-*.6502     diff=Assembly
+*.6502  diff=Assembly
+*.6502  linguist-language=Assembly
 
 # Standard to msysgit
 *.doc	 diff=astextplain
